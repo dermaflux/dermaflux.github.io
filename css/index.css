@@ -1,3 +1,13 @@
+:root {
+  --accent: #7B6FE8;
+  --accent-light: #9B8FFF;
+  --cyan: #4ECFFF;
+  --purple: #7B6FE8;
+  --pink: #E06FCA;
+  --bg: #ffffff;
+  --section-bg: #f5f5f5;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -240,4 +250,14 @@ body {
 .highlight {
   color: var(--deep-teal);
   font-weight: 600;
+}
+
+.alt-section {
+  background-color: var(--section-bg);
+}
+
+.is-half-width {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
