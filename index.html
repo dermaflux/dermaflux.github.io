@@ -38,7 +38,7 @@
                 <a href="https://stathisgln.github.io/">Stathis Galanakis</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                <a href="https://akoliousis.com/">Alexandros Koliousis</a><sup>2</sup>,
+                <a href="https://akoliousis.com/">Alexandros Koliousis</a><sup>1,2</sup>,
               </span>
 
               <span class="author-block">
@@ -55,7 +55,7 @@
               <div class="publication-links">
 				<!-- PDF Link. -->
                 <span class="link-block">
-                  <a href=""
+                  <a href="https://arxiv.org/pdf/2603.16392"
                      class="external-link button is-normal is-rounded is-dark">
                      <span class="icon">
                       <i class="fa fa-file-pdf-o"></i>
@@ -65,7 +65,7 @@
                 </span>
                 <!-- arXiv Link. -->
                 <span class="link-block">
-                  <a href=""
+                  <a href="https://arxiv.org/abs/2603.16392"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -80,7 +80,7 @@
                     <span class="icon">
                         <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (Coming Soon)</span>
                   </a>
                 </span>
               </div>
@@ -110,10 +110,12 @@
 </section>  
 
 
-<section class="hero teaser">
+<section class="hero teaser alt-section">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Method</h2>
       <div class="subtitle has-text-justified">
+
       <img src="images/method.png" alt="Teaser figure">
       <h2 class="subtitle has-text-centered">
       DermaFlux synthesizes a skin lesion image x1 by transporting Gaussian noise z0 to a clean latent representation z1, conditioned on the input caption. 
@@ -122,8 +124,6 @@
     </div>
   </div>
 </section>
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -154,13 +154,62 @@
     <!--/ Abstract. -->
 </section>
 
+<section class="section alt-section">
+  <div class="container is-max-desktop">
+    <div class="column is-full-width">
+      <h1 class="title is-3 has-text-centered">Generated Samples</h1>
+      <img src="images/samples_benign.png" alt="benign samples">
+      <div class="content has-text-centered">
+      Examples of generated images containing a benign skin lesion.  
+      </div>
+
+      <img src="images/samples_malignant.png" alt="malignant samples">
+      <div class="content has-text-centered">
+      Examples of generated images containing a malignant skin lesion.  
+      </div>
+
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="column is-full-width">
+      <h1 class="title is-3 has-text-centered">Experiments</h1>
+
+      <img src="images/class_exp.png" alt="classification experiment">
+      <div class="content has-text-centered">
+      Test accuracy scores for ResNeXt and ViT across varying real-to-synthetic training data ratios. Results are averaged over five independent runs (different seeds).    
+    </div>
+    </div>
+    <div class="column is-half-width is-centered">
+      <img src="images/roc_exp.png" alt="roc experiment">
+      <div class="content has-text-centered">
+      <span class="smallcaps">DermaFlux</span>-ViT separates malignant and benign test samples more reliably than competing models.
+    </div>
+    </div>
+
+    
+  </div>
+</section>
+
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
   <!--     Bibtext -->
     <h2 class="title">BibTeX</h2>
     <pre><code>
-
+@misc{galanakis2026dermafluxsyntheticskinlesion,
+      title={DermaFlux: Synthetic Skin Lesion Generation with Rectified Flows for Enhanced Image Classification}, 
+      author={Stathis Galanakis and Alexandros Koliousis and Stefanos Zafeiriou},
+      year={2026},
+      eprint={2603.16392},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.16392}, 
+}
     </code></pre>
   </div>
 </section>
