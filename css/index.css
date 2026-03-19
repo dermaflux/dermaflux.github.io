@@ -261,3 +261,26 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.image-block {
+  text-align: center;
+  max-width: 400px;
+}
+
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-block img {
+  height: 250px;   /* fixed height */
+  width: auto;     /* keeps aspect ratio */
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+}
