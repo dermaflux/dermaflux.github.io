@@ -83,6 +83,15 @@
                     <span>Code</span>
                   </a>
                 </span>
+
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/datasets/StathisGln/DermaFlux_synthetic_dataset"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">&#129303;</span>
+                    <span>Synthetic Dataset</span>
+                  </a>
+                </span> -->
+                
               </div>
             </div>
   
@@ -158,6 +167,49 @@
 <section class="section alt-section">
   <div class="container is-max-desktop">
     <div class="column is-full-width">
+      <h1 class="title is-3 has-text-centered">Curated Dataset</h1>
+      <div class="image-row">
+        <div class="image-block">
+          <img src="images/ISIC_0073753.jpg" alt="Image 1">
+          <p class="caption">The mole in the image is generally <span style="background-color:green;">symmetrical</span>, with 
+            <span style="background-color:lightblue;">a relatively smooth border. However, there are some areas where the border appears to be slightly irregular, with a
+            few small notches and bumps.</span>
+            <span style="background-color:#C4A484;">The color of the mole is primarily brown, with some areas
+            of lighter and darker shades of brown. There are also some small, darker spots scattered
+            throughout the mole, which may be pigmentation variations or small freckles.</span>
+            Overall, the mole has a relatively uniform color and texture, with some minor variations.</p>
+        </div>
+
+        <div class="image-block">
+          <img src="images/ISIC_0077281.jpg" alt="Image 2">
+          <p class="caption">
+            <span style="background-color:green;">The mole exhibits a notable degree of asymmetry,
+              with one half being significantly larger than the other.</span>
+            <span style="background-color:lightblue;">The border of the mole is irregular and jagged,
+              with a rough, uneven texture.</span>
+            <span style="background-color:#C4A484;">The coloration of the mole is irregular, featuring a mix of dark brown and
+            black patches scattered throughout the lesion. Additionally, there are areas of lighter skin tone visible, 
+            which may indicate a variation in pigmentation.</span>
+            Overall, the mole’s appearance suggests a potential malignancy, warranting further examination and diagnosis.”</p>
+        </div>
+      </div>
+      <br>
+      <div class="content has-text-centered">
+      Given a lesion image and its label, benign (<em>left</em>) or malignant (<em>right</em>),
+      LLama 3.2 generates a synthetic caption using the prompt:
+       <em>“This is an image containing a [label] lesion. Give me a description of
+        this mole regarding its <span style="background-color:green;">asymmetry</span>, 
+        <span style="background-color:lightblue;">border irregularity</span>, and 
+        <span style="background-color:#C4A484;">color</span>.”</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="column is-full-width">
       <h1 class="title is-3 has-text-centered">Generated Samples</h1>
       <img src="images/samples_benign.png" alt="benign samples">
       <div class="content has-text-centered">
@@ -174,7 +226,7 @@
   </div>
 </section>
 
-<section class="section ">
+<section class="section alt-section">
   <div class="container is-max-desktop">
     <div class="column is-full-width">
       <h1 class="title is-3 has-text-centered">Experiments</h1>
